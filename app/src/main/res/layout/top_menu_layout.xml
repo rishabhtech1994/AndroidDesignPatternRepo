@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/blueTop"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_upper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/mano_super_market"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/ic_icons_global_verify" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <Button
+                        android:id="@+id/textButton"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/button_bg"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:padding="1dp"
+                        android:text="@string/yourPlan"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <!-- card menu-->
+    <include
+        android:id="@+id/card_view_layout"
+        layout="@layout/card_view_top_layout" />
+
+
+</RelativeLayout>

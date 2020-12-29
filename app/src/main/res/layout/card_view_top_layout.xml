@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:local="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="?attr/textAppearanceHeadline6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/galano_grotesque_medium"
+                        android:text="@string/share_more_to_earn_more"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/galano_grotesque_regular"
+                        android:text="@string/your_customers_can_visit_your_online_store_and_place_the_orders_from_this_link" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <TextView
+                    style="@style/Hyperlink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:fontFamily="@font/galano_grotesque_medium"
+                    android:text="sellplus.com/mano"
+                    local:MvxBind="Text Id; Click ShowJobInfoCommand" />
+
+
+                <Button
+                    android:id="@+id/textButton"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/button_corner_radius"
+                    android:drawableLeft="@drawable/ic_group_13"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/share"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

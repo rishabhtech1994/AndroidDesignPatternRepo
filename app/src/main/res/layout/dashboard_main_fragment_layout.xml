@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollVwHomeParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_grey"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMenuBalanceDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!-- top menu-->
+            <include
+                android:id="@+id/include_topmenu"
+                layout="@layout/top_menu_layout" />
+            <!-- middle menu-->
+            <include
+                android:id="@+id/middle_menu"
+                layout="@layout/middle_design_card_layout" />
+            <!-- bottom design horizontal scroll-->
+            <include
+                android:id="@+id/lower_menu"
+                layout="@layout/lower_design_layout" />
+            <!-- bottom recycler view layout-->
+            <include
+                android:id="@+id/lower_recycler_view"
+                layout="@layout/lower_recycler_view_layout" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

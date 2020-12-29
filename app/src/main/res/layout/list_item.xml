@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/galano_grotesque_medium"
+        android:lineSpacingExtra="6sp"
+        android:padding="5dp"
+        android:text="Pending (129)"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+</LinearLayout>
